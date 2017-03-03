@@ -9,6 +9,8 @@ import android.content.*;
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>
 {
 	private List<String> name_list;
+
+	public Context context;
     static class ViewHolder extends RecyclerView.ViewHolder
 	{
 		View item_view;
@@ -28,13 +30,14 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>
 	@Override
 	public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType)
 	{
+		
 		View item = LayoutInflater.from(parent.getContext()).inflate(R.layout.layout_item
 		,parent,false);
 		 final ViewHolder holder = new ViewHolder(item);
-		holder.item_view.setOnClickListener(new OnClickListener(){
+		holder.item_view.setOnClickListener(new View.OnClickListener(){
 			public void onClick(View v)
 			{
-				switch (holder.text.toString())
+				switch (holder.text.getText().toString())
 				{
 					case "thread":
 						Intent intent = new Intent(v.getContext(),Thread.class);

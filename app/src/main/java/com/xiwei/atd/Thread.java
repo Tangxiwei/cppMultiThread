@@ -1,8 +1,9 @@
 package com.xiwei.atd;
 import android.support.v7.app.*;
 import android.os.*;
+import android.app.*;
 
-public class Thread extends AppCompatActivity
+public class Thread extends Activity
 {
 	protected void onCreate(Bundle savedInstanceState)
     {

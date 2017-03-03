@@ -5,8 +5,9 @@ import android.os.*;
 import java.util.*;
 import android.support.v7.widget.*;
 import android.content.*;
+import android.support.v7.app.*;
 
-public class MainActivity extends Activity 
+public class MainActivity extends Activity
 {
 	private List<String> list = new ArrayList<>();
     @Override
