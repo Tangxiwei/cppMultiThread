@@ -7,7 +7,7 @@ import android.support.v7.widget.*;
 import android.content.*;
 import android.support.v7.app.*;
 
-public class MainActivity extends Activity
+public class MainActivity extends AppCompatActivity
 {
 	private List<String> list = new ArrayList<>();
     @Override
@@ -15,6 +15,8 @@ public class MainActivity extends Activity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+		Toolbar tool = (Toolbar)findViewById(R.id.toolbar);
+		setSupportActionBar(tool);
 		initData();
 		RecyclerView recycler = (RecyclerView) findViewById(R.id.recycler);
 		LinearLayoutManager layoutmanager = new LinearLayoutManager(this);
