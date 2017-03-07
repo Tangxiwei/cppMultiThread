@@ -6,9 +6,13 @@ import java.util.*;
 import android.support.v7.widget.*;
 import android.content.*;
 import android.support.v7.app.*;
+import android.view.*;
+import android.support.v4.widget.*;
+import android.support.v4.view.*;
 
 public class MainActivity extends AppCompatActivity
 {
+	private DrawerLayout mDraw ;
 	private List<String> list = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -17,6 +21,10 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.main);
 		Toolbar tool = (Toolbar)findViewById(R.id.toolbar);
 		setSupportActionBar(tool);
+	
+		android.support.v7.app.ActionBar action = getSupportActionBar();
+		if (action != null){action.setDisplayHomeAsUpEnabled(true);
+		action.setHomeAsUpIndicator(R.drawable.ic_menu);}
 		initData();
 		RecyclerView recycler = (RecyclerView) findViewById(R.id.recycler);
 		LinearLayoutManager layoutmanager = new LinearLayoutManager(this);
@@ -31,5 +39,26 @@ public class MainActivity extends AppCompatActivity
 		list.add(new String("condtion_variable")) ;
 		
 	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu)
+	{
+		getMenuInflater().inflate(R.menu.toolbar,menu);
+		return true;
+	}
+    
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item)
+	{
+		switch (item.getItemId())
+		{
+			case android.R.id.home :
+				mDraw.openDrawer(GravityCompat.START);
+				break;
+			default:break;
+		}
+		return true;
+	}
+	
 	
 }
