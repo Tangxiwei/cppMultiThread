@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.main);
 		Toolbar tool = (Toolbar)findViewById(R.id.toolbar);
 		setSupportActionBar(tool);
-	
+	    mDraw = (DrawerLayout)findViewById(R.id.drawlayout);
 		android.support.v7.app.ActionBar action = getSupportActionBar();
 		if (action != null){action.setDisplayHomeAsUpEnabled(true);
 		action.setHomeAsUpIndicator(R.drawable.ic_menu);}
