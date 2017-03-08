@@ -3,6 +3,11 @@
 	android:orientation="vertical"
 	android:layout_width="match_parent"
 	android:layout_height="wrap_content">
+	<android.support.v7.widget.Toolbar
+		android:id="@+id/toolbar_thread"
+		android:layout_width="match_parent"
+		android:layout_height="?attr/actionBarSize"
+		android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"/>
 	<TextView
 		android:id="@+id/thread_text1"
 		android:layout_width="match_parent"

@@ -1900,7 +1900,7 @@ containing a value of this type.
         public static final int add=0x7f0a0014;
         public static final int alertTitle=0x7f0a003c;
         public static final int always=0x7f0a001e;
-        public static final int backup=0x7f0a0073;
+        public static final int backup=0x7f0a0074;
         public static final int beginning=0x7f0a001b;
         public static final int bottom=0x7f0a0023;
         public static final int buttonPanel=0x7f0a002f;
@@ -1980,12 +1980,13 @@ containing a value of this type.
         public static final int text2=0x7f0a006e;
         public static final int textSpacerNoButtons=0x7f0a0036;
         public static final int textSpacerNoTitle=0x7f0a0035;
-        public static final int thread_text1=0x7f0a0072;
+        public static final int thread_text1=0x7f0a0073;
         public static final int time=0x7f0a0066;
         public static final int title=0x7f0a002e;
         public static final int titleDividerNoCustom=0x7f0a003d;
         public static final int title_template=0x7f0a003b;
         public static final int toolbar=0x7f0a0059;
+        public static final int toolbar_thread=0x7f0a0072;
         public static final int top=0x7f0a0024;
         public static final int topPanel=0x7f0a003a;
         public static final int tv_name=0x7f0a0057;
