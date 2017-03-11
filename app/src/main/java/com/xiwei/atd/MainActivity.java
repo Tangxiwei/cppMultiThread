@@ -10,7 +10,7 @@ import android.view.*;
 import android.support.v4.widget.*;
 import android.support.v4.view.*;
 
-public class MainActivity extends AppCompatActivity
+public class MainActivity extends BaseActivity
 {
 	private DrawerLayout mDraw ;
 	private List<String> list = new ArrayList<>();
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity
 			case android.R.id.home :
 				mDraw.openDrawer(GravityCompat.START);
 				break;
-			default:break;
+			default:
 		}
 		return true;
 	}

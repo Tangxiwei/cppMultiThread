@@ -3,7 +3,7 @@ import android.support.v7.app.*;
 import android.os.*;
 import android.content.*;
 
-public class BaseAcitivity extends AppCompatActivity
+public class BaseActivity extends AppCompatActivity
 {
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
